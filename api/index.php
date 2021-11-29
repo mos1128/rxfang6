@@ -3,6 +3,7 @@
 <script>if(window.parent){syncMsg={type:"sync",title:document.title,path:document.location.pathname+document.location.hash};window.parent.postMessage(syncMsg,"*");};</script> 
 */
 $meta_tags = get_meta_tags("https://sss001.mos.mos.q0yy.com/");//最终网址
+var_dunmp($meta_tags);
 $keywords=$meta_tags['keywords'];
 $description=$meta_tags['description'];
 ?>
