@@ -3,12 +3,12 @@
 <script>if(window.parent){syncMsg={type:"sync",title:document.title,path:document.location.pathname+document.location.hash};window.parent.postMessage(syncMsg,"*");};</script> 
 */
 $meta_tags = get_meta_tags("https://sss001.mos.mos.q0yy.com/");//最终网址
-if($meta_tags['keywords']){
+if(isset($meta_tags['keywords'])){
 	$keywords=$meta_tags['keywords'];
 }else{
-	$keywords="";
+	$keywords="12323";
 }
-if($meta_tags['description']){
+if(isset($meta_tags['description'])){
 	$description=$meta_tags['description'];
 }else{
 	$description="进来看看呗";
