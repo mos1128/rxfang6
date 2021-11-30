@@ -10,7 +10,7 @@
 代码：<script>if(window.parent){syncMsg={type:"sync",title:document.title,path:document.location.pathname+document.location.hash};window.parent.postMessage(syncMsg,"*");};</script>
 */
 $web_name = "https://sss001.mos.mos.q0yy.com/";//设置网站域名
-$web_query = $_SERVER['QUERY_STRING'];
+$web_query =  isset($_SERVER['QUERY_STRING']) ? $_SERVER['QUERY_STRING'] : "";
 $web_url = $web_name.$web_query;
 $site_info = CurlGet($web_url);
 $title = isset($site_info['site_title']) ? $site_info['site_title'] : "美图分享";
